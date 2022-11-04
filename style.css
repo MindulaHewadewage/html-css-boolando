@@ -3,13 +3,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 /* GENERICS */
-
-body{
-    padding-top:90px;
-}
 
 .container{
     max-width: 1100px;
@@ -31,13 +28,12 @@ a{
 }
 
 .row{
-    gap: 10px;
+    gap: 15px;
 }
 
 .col{
     flex-basis:calc(100%/3);
     height:100px;
-    border: 1px dashed black;
 
 }
 
@@ -50,6 +46,7 @@ header{
     height: 60px;
     color: white;
     position: fixed;
+    z-index: 1;
 
 }
 
@@ -74,8 +71,70 @@ header{
 
 
 /* CARD */
-img{
+
+
+.img-web{
     width: 100%;
-  
+    margin-top: 100px;
 }
 
+/* CLOTHES DESCRIPTION */
+
+.brand{
+    font-size: 14px;
+}
+
+.size{
+    font-size: 16px;
+    font-weight: 700;
+    text-transform:uppercase
+}
+
+.price{
+    color: red;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.original-price{
+    color: black;
+    text-decoration: line-through;
+    font-weight: 500;
+}
+
+/* LABEL */
+
+.tag{
+    position: relative;
+}
+
+.label{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    padding: 5px;
+    position: relative;
+    bottom:70px;
+}
+
+.discount{
+    background-color: red;
+    width: 60px;
+
+ 
+}
+
+.sustanaible{
+    background-color: green;
+    position: absolute;
+    left: 65px;
+}
+
+.favourite{
+    position: absolute;
+    bottom:520px;
+    right: 0;
+    padding: 10px;
+    background-color: white;
+}
