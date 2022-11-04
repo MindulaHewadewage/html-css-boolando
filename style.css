@@ -72,11 +72,32 @@ header{
 
 /* CARD */
 
+.card{
+    position: relative;
+}
 
 .img-web{
     width: 100%;
     margin-top: 100px;
 }
+
+.second-image{
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 0;
+
+}
+
+.card:hover .second-image{
+ display: block;
+ position:absolute;
+}
+
+.double-image{
+}
+
 
 /* CLOTHES DESCRIPTION */
 
@@ -133,7 +154,7 @@ header{
 
 .favourite{
     position: absolute;
-    bottom:520px;
+    bottom:500px;
     right: 0;
     padding: 10px;
     background-color: white;
