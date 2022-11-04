@@ -7,9 +7,62 @@
 
 /* GENERICS */
 
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
 
 /* UTILITIES */
 
+.flex{
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    margin: 5px;
+
+}
 
 /* HEADER */
+
+header{
+    width: 100%;
+    background-color: #FF6900;
+    height: 60px;
+    color: white;
+    position: fixed;
+
+}
+
+/* NAV */
+.nav{
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.dress-size{
+    list-style-type: none;
+    color: white;
+
+}
+
+.logo{
+    height: 30px;
+    display: block;
+
+}
+
+
+/* MAIN */
+
+.col{
+    flex-basis:calc(100%/3);
+    height:100px;
+    border: 1px dashed black;
+
+}
+
