@@ -27,14 +27,23 @@ a{
 
 }
 
-.row{
+.row, .bottom{
     gap: 15px;
+}
+
+.bottom{
+    position:relative;
+    top: 530px;
 }
 
 .col{
     flex-basis:calc(100%/3);
     height:100px;
 
+}
+
+.display-none{
+    display: none;
 }
 
 
@@ -103,6 +112,7 @@ header{
 
 .brand{
     font-size: 14px;
+    text-transform: capitalize;
 }
 
 .size{
