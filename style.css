@@ -13,6 +13,9 @@
     margin: 0 auto;
 }
 
+main{
+    margin-top: 100px;
+}
 
 /* UTILITIES */
 
@@ -27,19 +30,18 @@ a{
 
 }
 
-.row, .bottom{
+.row{
     gap: 15px;
+    flex-wrap: wrap;
+    margin: 0 -10px;
 }
 
-.bottom{
-    position:relative;
-    top: 530px;
-}
+
 
 .col{
-    flex-basis:calc(100%/3);
-    height:100px;
-
+    flex-basis:calc(100%/3 - 15px);
+    min-height: 500px;
+    margin-bottom: 30px;
 }
 
 .display-none{
@@ -91,32 +93,30 @@ header{
 
 /* CARD */
 
-.card{
-    position: relative;
-}
+
 
 .img-web{
     max-width: 100%;
-    margin-top: 100px;
+    width: 100%;
 }
 
 .second-image{
     max-width: 100%;
-    display: none;
     position: absolute;
-    top: 100px;
-    left: 0;
+    bottom: 0;
+    left:0;
+    display: none;
+}
+
+.card-image{
+    position: relative;
+    
 
 }
 
-.card:hover .second-image{
+.card-image:hover .second-image{
  display: block;
- position:absolute;
 }
-
-/*.double-image{
-
-}*/
 
 
 /* CLOTHES DESCRIPTION */
@@ -146,37 +146,56 @@ header{
 
 /* LABEL */
 
+
+
 .tag{
-    position: relative;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 50px;
+    display: inline-block;
 }
 
 .label{
-    text-align: center;
-    font-size: 14px;
-    font-weight: 600;
     color: white;
-    padding: 5px;
-    position: relative;
-    bottom:70px;
+    font-weight: bold;
+    padding: 5px 10px;
 }
 
 .discount{
     background-color: red;
-    width: 60px;
-
- 
 }
 
 .sustanaible{
     background-color: green;
-    position: absolute;
-    left: 65px;
 }
 
 .favourite{
-    position: absolute;
-    bottom:500px;
+    position:absolute ;
+    top: 15px;
     right: 0;
-    padding: 10px;
     background-color: white;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+
+    cursor: pointer;
+
 }
+
+.favourite:hover{
+    color: red;
+}
+
+
+/* FOOTER */
+
+footer{
+    background-color: #1A1A1A;
+    height: 60px;
+    color: white;
+    box-shadow: 0 1px 3px #666;
+}
+
+
